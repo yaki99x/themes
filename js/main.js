@@ -97,46 +97,6 @@ d+"px").css("background-color",a.isDark(e,i)?h.foreground:h.background).appendTo
 
 
 $(document).ready(function(){
-
-
-	// TBUI
-	window.TBUI = window.TBUI || {}
-
-    TBUI.bd = $('body')
-
-	TBUI.ajaxpager = TBUI.ajaxpager ? Number(TBUI.ajaxpager) : 10
-    TBUI.pagenum = TBUI.pagenum ? Number(TBUI.pagenum) : 20
-    TBUI.shareimage = TBUI.shareimage || ''
-	TBUI.shareimagethumb = TBUI.shareimagethumb ? Number(TBUI.shareimagethumb) : 1
-	TBUI.fullgallery = TBUI.fullgallery ? Number(TBUI.fullgallery) : 1
-	TBUI.fullimage = TBUI.fullimage ? Number(TBUI.fullimage) : 1
-
-	TBUI.click = 'click'
-
-
-
-	$('.sitenav-on').on(TBUI.click, function(){
-		TBUI.bd.toggleClass('sitenav-active')
-	})
-
-	$('.sitenav-mask').on(TBUI.click, function(){
-		TBUI.bd.removeClass('sitenav-active')
-	})
-
-
-	$('.searchstart-on').on(TBUI.click, function(){
-		$(this).hide()
-		$('.searchstart-off').show()
-		TBUI.bd.addClass('searchform-active')
-		$('.sinput').focus()
-	})
-
-	$('.searchstart-off').on(TBUI.click, function(){
-		$(this).hide()
-		$('.searchstart-on').show()
-		TBUI.bd.removeClass('searchform-active')
-	})
-
     
 
 
